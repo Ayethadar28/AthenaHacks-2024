@@ -9,7 +9,7 @@ $(document).ready(function () {
 
         if (taskNum == 1) {
             if (UserIn == "3") {
-                document.getElementById('task-num').innerText = "I still need outfit!!";
+                document.getElementById('task-num').innerText = "Task#2: I still need an outfit!!";
                 document.getElementById('task-desc').innerText = "There are two ducks in front of a duck, two ducks behind a duck and a duck in the middle. How many ducks are there?"
 ;
                 duckIcon.src = 'Images/Task1_Complete.png';//Changes Image
