@@ -23,6 +23,7 @@ $(document).ready(function () {
                 document.getElementById('task-num').innerText = "#3 - Don't forget my laptop";
                 document.getElementById('task-desc').innerText = "There are two ducks in front of a duck, two ducks behind a duck and a duck in the middle. How many ducks are there?";
                 Task2.src = 'Images/Task2_icon.png';
+                duckIcon.src = 'Images/Task2_Complete.png';
                 PasswordField.value = "";
                 taskNum++;
             } else {
@@ -33,6 +34,7 @@ $(document).ready(function () {
                 document.getElementById('task-num').innerText = "Task completed!";
                 document.getElementById('task-desc').innerText = "Congratulations!";
                 Task3.src = 'Images/Task3_icon.png';
+                duckIcon.src = 'Images/Task3_Complete.png';
                 errorMessage.style.color = "black";
                 taskNum++;
             } else {
