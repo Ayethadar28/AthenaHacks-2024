@@ -8,33 +8,36 @@ $(document).ready(function () {
         var UserIn = PasswordField.value;
 
         if (taskNum == 1) {
-            if (UserIn == "Workshop Room") {
-                document.getElementById('task-num').innerText = "Task #2";
-                document.getElementById('task-desc').innerText = "This is Task 2";
+            if (UserIn == "3") {
+                document.getElementById('task-num').innerText = "I still need outfit!!";
+                document.getElementById('task-desc').innerText = "There are two ducks in front of a duck, two ducks behind a duck and a duck in the middle. How many ducks are there?"
+;
                 duckIcon.src = 'Images/Task1_Complete.png';//Changes Image
                 PasswordField.value = "";
                 taskNum++;
             } else {
-                alert("Wrong Answer");
+                alert("Quack Quack!");
             }
         } else if (taskNum == 2) {
-            if (UserIn == "Room") {
+            if (UserIn == "Quackers") {
                 document.getElementById('task-num').innerText = "Task #3";
-                document.getElementById('task-desc').innerText = "This is Task 3";
+                document.getElementById('task-desc').innerText = "What foods does a duck prefer eating with soup?"
+;
                 PasswordField.value = "";
                 taskNum++;
             } else {
-                alert("Wrong Answer");
+                alert("Quack Quack!");
             }
         } else if (taskNum == 3) {
-            if (UserIn == "Sleep Room") {
+            if (UserIn == "24") {
                 document.getElementById('task-num').innerText = "Task completed!";
-                document.getElementById('task-desc').innerText = "Congratulations!";
+                document.getElementById('task-desc').innerText = "How many times has USC won the Rose Bowl?"
+;
                 errorMessage.style.color = "black";
                 taskNum++;
             } else {
                 errorMessage.style.color = "red";
-                alert("Wrong Answer");
+                alert("Quack Quack!");
             }
         }
     });
