@@ -16,7 +16,7 @@ $(document).ready(function () {
                 PasswordField.value = "";
                 taskNum++;
             } else {
-                alert("Wrong Answer");
+                alert("Try Again");
             }
         } else if (taskNum == 2) {
             if (UserIn == "Quackers") {
@@ -27,19 +27,13 @@ $(document).ready(function () {
                 PasswordField.value = "";
                 taskNum++;
             } else {
-                alert("Wrong Answer");
+                alert("Try Again");
             }
         } else if (taskNum == 3) {
             if (UserIn == "Three") {
-                document.getElementById('task-num').innerText = "Task completed!";
-                document.getElementById('task-desc').innerText = "Congratulations!";
-                Task3.src = 'Images/Task3_icon.png';
-                duckIcon.src = 'Images/Task3_Complete.png';
-                errorMessage.style.color = "black";
-                taskNum++;
+                window.location.href = '/end.html';
             } else {
-                errorMessage.style.color = "red";
-                alert("Wrong Answer");
+                alert("Try Again");
             }
         }
     });
