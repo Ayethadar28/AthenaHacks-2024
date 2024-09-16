@@ -6,58 +6,47 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; /* Center vertically */
-    background-color: #A9BB89;
+    background-color: #FFFFFF;
 }
 
 .header {
-    background-color: #F5F5F5;
     margin-top: 30px;
-    border-radius: 20px;
 }
 
-#task-num {
-    color: #6E5398;
-    font-family: 'Jua', sans-serif; /* Specify fallback font */
-    font-size: 32px;
+#top-welcome {
+    color: #000000;
+    font-family: 'Jua', sans-serif;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     display: flex;
     width: 393px;
-    padding: 10px 40px;
+    padding: 1px 40px;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-bottom: 0px;
 }
 
-.progress-bar {
-    width: 90%;
+#top-quack {
+    color: #6A8371;
+    font-family: 'Jua', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 393px;
     display: inline-flex;
+    padding: 1px 40px;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0px;
 }
 
-.progress-bar-line {
-    background-color: grey;
-    margin:auto;
-    margin-right:0px;
-    margin-left:0px;
-    height: 5px;
-    width: 15%;
-
-}
-
-.progress-icons {
-    width:15%;
-}
-
-.progress-icons.active {
-    width: 15%;
-    filter: grayscale(0);
-}
-
-#duck-icon {
+.duck-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,66 +60,33 @@ body {
     margin-top: 32px;
 }
 
-.desc-box {
+.login-box {
     display: flex;
-    flex-wrap: wrap;
-    background-color: #F5F5F5;
-    height: 150px;
-    width: 260px;
-    margin-top: 32px;
+    flex-direction: column;
+    background-color: #6E5398;
+    height: 191px;
+    width: 300px;
+    margin-top: 48px;
     justify-content: center;
     align-items: center;
-}
-
-#task-desc {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 16px;
-    color: #000;
-    padding: 15px;
-}
-
-#hint-button {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    width: 50px;
-    height: 25px;
-    background-color: #E6A5B9;
-    color: #FFFFFF;
-    font-family: Jua;
-    font-size: 20px;
-    line-height: normal;
     border-radius: 20px;
-    padding: 5px 18px;
-    margin-top: 15px;
+    padding: 10px;
 }
 
-.password {
-    display: flex;
-    align-items: center;
-}
-
-#password-label {
+#username-label {
     display: flex;
     justify-content: center;
-    width: 200px;
-    height: 25px;
-    background-color: #b5a6cf;
     color: #FFFFFF;
     font-family: 'Jua', sans-serif;
     font-size: 20px;
     line-height: normal;
-    padding: 10px;
+    margin-top: 10px;
     margin-bottom: 0px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
-#password-input {
+#username-input {
     width: 200px;
-    height: 25px;
+    height: 20px;
     background-color: #F5F5F5;
     color: #000000;
     font-family: 'Jua', sans-serif;
@@ -138,25 +94,49 @@ body {
     line-height: normal;
     padding: 10px;
     border: none;
-    margin-top: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    margin-top: 10px;
 }
+
+#password-label {
+    display: flex;
+    justify-content: center;
+    color: #F5F5F5;
+    font-family: 'Jua', sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#password-input {
+    width: 200px;
+    height: 18px;
+    background-color: #F5F5F5;
+    color: #000000;
+    font-family: 'Jua', sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 #submit-button {
     display: flex;
     justify-content: center;
     cursor: pointer;
-    width: 100px;
-    height: 50px;
-    background-color: transparent;
+    width: 104px;
+    height: 35px;
+    background-color: #A9BB89;
     color: #FFFFFF;
     font-family: Jua;
     font-size: 20px;
     line-height: normal;
     border-radius: 20px;
-    border: 4px solid #6A8371;
+    border: none;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 10px 29px;
+    padding: 5px 18px;
 }
